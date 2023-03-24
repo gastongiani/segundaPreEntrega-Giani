@@ -1,0 +1,170 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600&display=swap')
+
+body{
+    font-family: 'Oswald', sans-serif !important
+    text-align: center;
+}
+
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    width: 385px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.logoChico{
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoPrincipal{
+    width: 690px;
+    justify-content: center;
+}
+
+.listaNavegacion{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Oswald', sans-serif
+
+}
+
+.linkNav{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.tituloPrincipal{
+    font-size: 100px;
+    color: white;
+}
+
+.segundoTitulo{
+    font-size: 35px;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.titulares{
+    font-size: 35px;
+    text-align: center;
+}
+
+.slogan{
+    font-size: 25px;
+    color: white;
+}
+
+.tamañoStandard{
+    font-size: 19px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+footer{
+    color: white;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+
+}
+
+.sectionBoxFixed{
+    background-color: rgb(79, 202, 42);
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    
+}
+
+
+.fotosGym{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fotosFlexb{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.parrafoFoot{
+    text-align: center;
+}
+
+/*
+.imagenComida{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+
+.galeria{
+    width: 80%;
+}
+
+.carousel-item{
+    height: 40vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}
