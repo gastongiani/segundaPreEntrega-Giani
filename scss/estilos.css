@@ -8,6 +8,7 @@
 
 body {
   font-family: "Oswald", sans-serif !important;
+  background-color: black;
 }
 
 header {
@@ -16,8 +17,34 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+header .nav {
+  padding: 20px;
+}
+header .nav .nav-link {
+  color: white;
+  font-size: 20px;
+}
 
-.logo {
+.sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+/*logo del Index*/
+.logoGrande {
+  justify-content: center;
+}
+.logoGrande .logoPrincipal {
+  width: 690px;
+}
+
+/* logo de las demas paginas*/
+.logoChico {
+  justify-content: center;
+  align-items: center;
+}
+.logoChico .logo {
   width: 385px;
   display: flex;
   justify-content: center;
@@ -25,44 +52,29 @@ header {
   flex-wrap: wrap;
 }
 
-.logoChico {
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+  header .logoPrincipal {
+    width: 480px;
+  }
 }
-
 main {
   color: white;
   background-color: black;
   text-align: center;
 }
 
-.principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.logoPrincipal {
-  width: 690px;
-  justify-content: center;
-}
-
 .tituloPrincipal {
   font-size: 100px;
   color: white;
 }
-
-.segundoTitulo {
+.tituloPrincipal .segundoTitulo {
   font-size: 35px;
   color: white;
   margin: 5px;
   padding: 5px;
-}
-
-.titulares {
-  font-size: 35px;
-  text-align: center;
 }
 
 .slogan {
@@ -70,11 +82,54 @@ main {
   color: white;
 }
 
+.titulares {
+  justify-content: center;
+  font-size: 35px;
+  text-align: center;
+}
+
 .tamañoStandard {
-  font-size: 19px;
+  justify-content: center;
+  font-size: 24px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+}
+
+/* estilos para galeria de fotos de la pagina El Templo*/
+.fotosGym {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.fotosGym .fotosFlexb {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* carousel para las fotos de la pagina Nutricion*/
+.principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.principal .galeria {
+  width: 80%;
+}
+.principal .galeria .carousel-item {
+  height: 40vh;
+}
+.principal .galeria .carousel-item .carousel-item img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
@@ -87,12 +142,7 @@ footer {
   justify-content: center;
 }
 
-.sticky {
-  position: sticky;
-  top: 0px;
-  z-index: 10;
-}
-
+/* estilo logo de whatsapp*/
 .sectionBoxFixed {
   background-color: rgb(79, 202, 42);
   width: 100px;
@@ -102,44 +152,6 @@ footer {
   right: 15px;
 }
 
-.fotosGym {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  width: 70%;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.fotosFlexb {
-  width: 300px;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .parrafoFoot {
   text-align: center;
-}
-
-/*
-.imagenComida{
-    width: 300px;
-    height: 100%;
-    object-fit: cover;
-}
-*/
-.galeria {
-  width: 80%;
-}
-
-.carousel-item {
-  height: 40vh;
-}
-
-.carousel-item img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }/*# sourceMappingURL=estilos.css.map */

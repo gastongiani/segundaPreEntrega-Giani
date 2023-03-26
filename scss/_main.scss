@@ -1,0 +1,72 @@
+main{
+    color: $color;
+    background-color: $background-color;
+    text-align: center;
+    .tituloPrincipal{
+        font-size: 100px;
+        color: $color;
+    }
+    .segundoTitulo{
+        font-size: 35px;
+        color: $color;
+        margin: 5px;
+        padding: 5px;
+    }
+    .slogan{
+        font-size: 25px;
+        color: $color;
+    }
+    .titulares{
+        justify-content: center;
+        font-size: 35px;
+        text-align: center;
+    }
+    .tamañoStandard{
+        justify-content: center;
+        font-size: 24px;
+        text-align: center;
+        display: map-get($map-flex, flex);
+        flex-wrap: map-get($map-flex, wrap);
+    }
+    
+}
+
+/* estilos para galeria de fotos de la pagina El Templo*/
+
+.fotosGym{
+    display: map-get($map-flex, flex);
+    flex-wrap: map-get($map-flex, wrap);
+    height: 100vh;
+    width: 70%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    .fotosFlexb{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+/* carousel para las fotos de la pagina Nutricion*/
+
+.principal{
+    display: map-get($map-flex, flex);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .galeria{
+        width: 80%;
+        .carousel-item{
+            height: 40vh;
+            .carousel-item img{
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.containerPrincipal{
+    @include flex-direction-center ($direction-mix)
+}
