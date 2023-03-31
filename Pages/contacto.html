@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../scss/estilos.css">
 </head>
 <body>
-    <header>
-        <div class="logoChico">   
+    <header class="sticky">
+        <div class="logoChico">
             <img class="logo" src="../Assets/log/unnamed.jpg" alt="imagen del logo">
         </div>
         <ul class="nav justify-content-center">
@@ -34,7 +34,8 @@
         </ul>
     </header>
     <main>
-        <section class="formulariosFlex">
+        <section class="row">
+        <section class="formulariosFlex col-sm-12 col-md-6">
             <h1 class="titulares">Contacto</h1>
             <div class="tamañoStandard">
                 <form action="">
@@ -55,7 +56,7 @@
                         <input type="password" placeholder="Escriba su contraseña">
                     </div>
                     <div>
-                        <textarea placeholder="Dejanos tu consulta..."cols="30" rows="10"></textarea>
+                        <textarea placeholder="Dejanos tu consulta..."cols="30" rows="6"></textarea>
                     <div>
                     <div>
                         <input type="submit" value="Enviar">
@@ -63,10 +64,12 @@
                     </div>
                 </form>
         </section>
-        <section class="mapaFlex">
-            <p class="tamañoStandard"> Ubicacion</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.685573626375!2d-58.43806120000001!3d-34.5868217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a250d75d6b%3A0xc81afebaa1270e4a!2sGym!5e0!3m2!1ses-419!2sar!4v1676321171915!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        <div class="mapaFlex col-sm-12 col-md-6">
+            <p class="titulares"> Ubicacion</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.685573626375!2d-58.43806120000001!3d-34.5868217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5a250d75d6b%3A0xc81afebaa1270e4a!2sGym!5e0!3m2!1ses-419!2sar!4v1676321171915!5m2!1ses-419!2sar" 
+            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
     </main>
     <footer>
         <div class="sectionBoxFixed">
