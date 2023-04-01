@@ -94,22 +94,7 @@ main{
         font-size: 20px;
 
     }
-    .principal{
-        display: map-get($map-flex, flex);
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        .galeria{
-            width: 60%;
-            .carousel-item{
-                height: 28vh;
-                .carousel-item img{
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
+    
     .fotosGym{
         display: map-get($map-flex, flex);
         flex-wrap: map-get($map-flex, wrap);
@@ -130,4 +115,12 @@ main{
         position: fixed;
         bottom: 2%;
     }
+}
+
+.formulariosFlex{
+    object-fit: cover;
+}
+
+.mapaFlex{
+    object-fit: cover;
 }
