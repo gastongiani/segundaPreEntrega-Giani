@@ -23,7 +23,7 @@ main{
     }
     .tamañoStandard{
         justify-content: center;
-        font-size: 24px;
+        font-size: 21px;
         text-align: center;
         display: map-get($map-flex, flex);
         flex-wrap: map-get($map-flex, wrap);
@@ -45,6 +45,12 @@ main{
         width: 300px;
         height: 300px;
         object-fit: cover;
+    }
+    .video{
+        width: 150px;
+        height: 120px;
+        position: fixed;
+        bottom: 2%;
     }
 }
 
@@ -70,12 +76,13 @@ main{
 .containerPrincipal{
     @include flex-direction-center ($direction-mix)
 }
-
+/* Imagen de la pagina Nosotros*/
 .fotoProfes{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 
 @media screen and (max-width: 768px){
     .tituloPrincipal{
@@ -94,33 +101,4 @@ main{
         font-size: 20px;
 
     }
-    
-    .fotosGym{
-        display: map-get($map-flex, flex);
-        flex-wrap: map-get($map-flex, wrap);
-        height: 75vh;
-        width: 50%;
-        margin: auto;
-        justify-content: space-around;
-        align-items: center;
-        .fotosFlexb{
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-        }
-    }
-    .video{
-        width: 150px;
-        height: 120px;
-        position: fixed;
-        bottom: 2%;
-    }
-}
-
-.formulariosFlex{
-    object-fit: cover;
-}
-
-.mapaFlex{
-    object-fit: cover;
 }
