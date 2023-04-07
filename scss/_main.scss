@@ -28,7 +28,7 @@ main{
         display: map-get($map-flex, flex);
         flex-wrap: map-get($map-flex, wrap);
     }
-    
+
 }
 
 /* estilos para galeria de fotos de la pagina El Templo*/
@@ -61,6 +61,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
     .galeria{
         width: 80%;
         .carousel-item{
@@ -84,22 +85,33 @@ main{
     object-fit: cover;
 }
 
+/* logo de las demas paginas*/
+.logoChico{
+    justify-content: center;
+    align-items: center;
+    .logo{
+        width: 385px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 768px){
     .tituloPrincipal{
-        font-size: 40px;
+        font-size: 3rem;
     }
     .segundoTitulo{
-        font-size: 28px;
+        font-size: 2rem;
     }
     .slogan{
-        font-size: 22px;
+        font-size: 2rem;
     }
     .titulares{
-        font-size: 27px;
+        font-size: 2rem;
     }
     .tamañoStandard{
-        font-size: 20px;
+        font-size: 1rem;
 
     }
 }
