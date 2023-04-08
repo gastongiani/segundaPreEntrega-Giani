@@ -85,18 +85,6 @@ main{
     object-fit: cover;
 }
 
-/* logo de las demas paginas*/
-.logoChico{
-    justify-content: center;
-    align-items: center;
-    .logo{
-        width: 385px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 @media screen and (max-width: 768px){
     .tituloPrincipal{
         font-size: 3rem;
